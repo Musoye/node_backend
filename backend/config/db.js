@@ -1,6 +1,5 @@
 #!/usr/bin/node
 //Connect to MongoDB
-//MONGO_URI = mongodb+srv://musoye:musoye@musoyecluster.ibnwiwn.mongodb.net/?retryWrites=true&w=majority
 
 const mongoose = require('mongoose')
 
