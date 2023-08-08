@@ -33,7 +33,8 @@ const updateGoal = expressAsyncHandler(async (req, res) => {
         throw new Error('Goal not found');
     }
     const UpdatedGoal = await Goal.findByIdAndUpdate(req.params.id, {"text": req.body.text})
-    res.status(200).json(UpdatedGoal);
+    const newGoal = await Goal.findById(req.params.id);
+    res.status(200).json(newGoal);
 });
 
 const deleteGoal = expressAsyncHandler(async (req, res) => {
