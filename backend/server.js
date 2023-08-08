@@ -22,5 +22,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, '127.0.0.1', () =>
 {
-    console.log('welcome to the jungle'.rainbow)
+    console.log('welcome to the jungle and thw world of achievable goals'.rainbow)
 })
